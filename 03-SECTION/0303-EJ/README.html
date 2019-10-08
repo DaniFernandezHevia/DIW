@@ -1,0 +1,30 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="elementos-inline-block">Elementos inline-block</h1>
+<p>En el ejemplo inicialmente se muestran tres cajas con distintas dimensiones y contenido.
+ <strong>display: inline-block</strong> 
+ Con esta etiqueta se alinean horizontalmente y aparentemente se desalinean verticalmente, sin embargo se están alineando por la linea de texto base, valor por defecto de la propiedad <strong>vertical-align</strong></p>
+<pre><code>div {
+    background-color: salmon;
+    color: white;
+    border: 1px solid;
+    width: 20rem;
+    height: 20rem;
+    ...
+
+    display: inline-block;  
+    // vertical-align: baseline; // Valor por defecto
+}
+</code></pre><p>En las sucesivas versiones se cambia la propiedad <strong>vertical-align</strong> con diferetes opciones de alineamiento entre los elementos inline-block</p>
+<ul>
+<li>vertical-align: middle. Alinea los elementos por su centro geométrico</li>
+<li>vertical-align: top. Alinea los elementos por su línea superior</li>
+<li>vertical-align: bottom. Alinea los elementos por su línea inferior</li>
+</ul>
+
+      </body>
+    </html>
