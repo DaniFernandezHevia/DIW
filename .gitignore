@@ -1,3 +1,4 @@
 prepos*.config
 **/css/*.map
+**/css/*.css
 .vscode/settings.json

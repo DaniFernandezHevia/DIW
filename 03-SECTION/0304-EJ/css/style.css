@@ -2,17 +2,18 @@
 div {
   width: 25%;
   height: 15rem;
-  background-color: deepskyblue;
+  background-color: green;
   padding: 1em;
   color: white;
-  display: inline-block; }
+  display: inline-block; } 
+  
 
 /**
  Solución 01:
 margin-left: -4px; // Posible solución con márgenes
 */
 /**
- Solución 02:
-main { font-size: 0; } // Establezco el font-size del elemento padre a 0
-div { font-size: 1rem; } // Vuelvo a restablecerlo en el hijo
-*/
+ Solución 02:*/
+main { font-size: 0; } /* Establezco el font-size del elemento padre a 0 */
+div { font-size: 1rem; } /* Vuelvo a restablecerlo en el hijo */
+
