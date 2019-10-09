@@ -1,0 +1,20 @@
+section {
+
+    background-color: deepskyblue;
+    padding: 2em;
+    margin: 2em;
+
+    article{
+        background-color: #FFF;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: black;
+        padding: 1em;
+    }
+}
+#columns-inline-block { //Para hacer columnas
+    article{
+        display: inline-block;
+        width: 22%;
+    }
+}
