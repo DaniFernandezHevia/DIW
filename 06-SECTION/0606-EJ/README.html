@@ -1,0 +1,29 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="z-index">Z-INDEX</h1>
+<ul>
+<li>La propiedad <strong>z-index</strong> determina el nivel de pila de un elemento HTML. El &quot;nivel de pila&quot; se refiere a la posición del element en el eje Z</li>
+<li><p>Solo es valida esta propiedad con la propiedad <strong>position</strong> establecida, si es necesario puedo poner <strong>position: relative</strong> sin establecerle coordenadas ya que el elemento se queda en su sitio.</p>
+</li>
+<li><p>Tenemos 5 tarjetas:
+´´´
+@for $i from 2 through 5 {
+  .card:nth-child(#{$i}) {</p>
+<pre><code>  position: absolute;
+  left: 8rem * ($i - 1);
+  top: 5rem * ($i - 1);
+  @if ($i == $zi) {
+      z-index: 1;
+  }
+</code></pre><p>  }
+´´´
+Con scss, con el codigo anterior, hacemos que cada carta que va pasando de la 1 a la 5 va tomando diferentes valores debido a el codigo scss que hemos puesto.</p>
+</li>
+</ul>
+
+      </body>
+    </html>

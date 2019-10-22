@@ -1,0 +1,47 @@
+nav {
+    background-color: deepskyblue;
+    text-transform: uppercase;
+    margin-bottom: 3em;
+    color: white;
+    ul {
+        display: table; 
+        width: 100%; 
+        table-layout: fixed; // Para evitar que el tamaño de la celda sea en función del contenido 
+        li {
+            display: table-cell; 
+            text-align: center; 
+            
+            // Resulta que los enlaces son muy poco accesibles
+            a {
+                padding: 1em;
+                display: block;
+            }            
+        }
+    }
+}
+
+.border {
+    ul {
+        // border-collapse: separate; // Por defecto, me pinta los bordes colindantes de ambas celdas // Paso 1
+        // border-collapse: collapse; // Con esta propiedad solo me pinta uno (los colapsa) 
+        border-spacing: .5em 1em; // Cuidado aquí la primera medida es izquierda y derecha y la última arriba y abajo
+     }
+    li {
+        border: 2px solid white;
+        border-radius: .5em; // Junto con border-spacing
+    }
+}
+
+.center {
+    background-color: transparent;
+    color: salmon;
+    li {
+        border: 1px solid deepskyblue;
+        width: 15rem;
+    }
+
+    ul {
+        width: auto;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,51 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="ejemplos-de-posicionamiento">Ejemplos de posicionamiento</h1>
+<p>La propiedad position, junto con la propiedad float (vista anteriormente), permite modificar la posición de cualquier elemento de la página
+El navegador, por defecto, coloca los elementos teniendo en cuenta el orden en el que aparecen en el html y si es un elemento en linea o en bloque. 
+Con <strong>position</strong> puedo modificar este comportamiento.</p>
+<h2 id="valores-de-position">Valores de position</h2>
+<h3 id="static">Static</h3>
+<p>Valor por defecto. Se ignoran las propiedades top, bottom, left, right y z-index
+Un elemento con la <strong>position: static</strong> esta tal cual establece el flujo normal del html</p>
+<h3 id="relative">Relative</h3>
+<p>Posicionamiento de la caja respecto a su posición original, es decir, donde se encuentra el elemento en su posición original si no le establezco ningun position. 
+En el momento que yo le de coordenadas voy a mover ese elemento a partir de ese punto.
+Además:</p>
+<ol>
+<li>El resto de elementos de la página respetan su posición original pero ignoran la nueva posición, como consecuencia podemos tener solapamientos.</li>
+<li>Top, bottom, left y right desplazan el elemento de su posición inicial</li>
+<li>Sirve de &quot;referencia&quot; para hijos posicionados de forma absoluta</li>
+</ol>
+<h3 id="absolute">Absolute</h3>
+<p>Posiciona el elemento en la coordenada (0, 0) del primer ancestro que tenga establecida la propiedad <strong>position</strong> diferente de <strong>static.</strong>
+Además:</p>
+<ol>
+<li>El elemento se posiciona fuera del flujo normal, el resto de elementos no respetan su posición original, es decir, se mueven y el espacio que dejan es ocupado por el resto de elementos, con lo que también podemos tener posibles solapamientos</li>
+<li>Top, right, bottom y left colocan la caja en la coordenada (0, 0) respecto del primer ancestro con la propiedad <strong>position</strong> establecida pero distinta de <strong>static</strong> </li>
+<li>Cuidado con el ancho, ocupa lo que ocupe su contenido, si tengo un elemento vacío me quedo sin ancho</li>
+<li>Si no tengo ningún ancestro con <strong>position</strong> distinto de <strong>static</strong>, el elemento se coloca en la coordenada (0,0) del html</li>
+</ol>
+<h3 id="fixed">Fixed</h3>
+<p>Posicionamiento de la caja respecto de la coordenada (0, 0) de la ventana
+Además:</p>
+<ol>
+<li>Fuera del flujo normal, es decir, el resto de elementos no respetan la posición original del elemento. Posibles solapamientos</li>
+<li>Ni el body ni el html son la ventana, por eso el elemento posicionado con fixed no se menea aunque haga scroll</li>
+</ol>
+<p>Ejemplos:</p>
+<ol>
+<li><a href="./0601-EJ">0601-EJ</a>. Ejemplos con <strong>position: relative</strong></li>
+<li><a href="./0602-EJ">0602-EJ</a>. Ejemplos con <strong>position: absolute</strong></li>
+<li><a href="./0603-EJ">0603-EJ</a>. Ejemplo de <strong>position: absolute</strong> con centrado vertical</li>
+<li><a href="./0604-EJ">0604-EJ</a>. Ejemplo de anchos con diferentes en el mismo elemento con <strong>position: relative</strong> y <strong>position: absolute</strong></li>
+<li><a href="./0605-EJ">0605-EJ</a>. Ejemplo con <strong>position: fixed</strong></li>
+<li><a href="./0606-EJ">0606-EJ</a>. Ejemplo con la propiedad <strong>z-index</strong></li>
+</ol>
+
+      </body>
+    </html>

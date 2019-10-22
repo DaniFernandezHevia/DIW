@@ -11,7 +11,7 @@ p {
     font-size: $fs;
 }
 
-// p { font-size: $fs; } Error
+// p { font-size: $fs; } Error, porque la variable fs esta anteriormente declarada.
 // p { $fs: 14px !globar; ... } // Definición global dentro de un contexto
 
 /** 

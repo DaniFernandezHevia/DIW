@@ -1,5 +1,5 @@
 # SECCION 01: Ejemplo 01. Ejemplos de bordes.
-## Trabajando con border-box 
+## Usando border-box 
 1. Ejemplo donde introducimos un padding y un border, por lo que, además del ancho de 20rem,
 le pondremos un padding de 5rm que se sumará a su ancho y un border que actuará de igual manera.
 - Codigo:
